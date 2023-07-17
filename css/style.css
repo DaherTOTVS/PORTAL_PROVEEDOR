@@ -1,0 +1,100 @@
+#navMenu{
+    border-bottom: 1px solid rgb(230, 230, 230) !important;;
+}
+
+#accordionSidebar{
+    background-color: white;
+    border-right: 1px solid rgb(218, 218, 218) !important;
+}
+
+#accordionSidebar, li, a{
+    color: black !important;
+}
+
+#accordionSidebar, i{
+    color: rgb(184, 184, 184) !important;
+}
+
+.nav-link[data-toggle=collapse]::after {
+    color: rgb(184, 184, 184)  !important;
+}
+
+.sidebar-divider{
+    background-color: rgb(218, 218, 218) !important;
+}
+
+#sidebarToggle{
+    background-color: rgb(46 41 41 / 20%) !important;
+}
+
+.sidebar-dark #sidebarToggle {
+    background-color: rgb(46 41 41 / 20%);
+}
+
+#linkBotton{
+    color: white !important;
+}
+
+form, label, input{
+    font-size: 14px !important;
+}
+
+#linkBotton{
+    font-size: 14px !important;
+}
+
+table, th, td{
+    font-size: 14px !important;
+}
+
+#cardStatus{
+    justify-content: center;
+    text-align: center;
+    border-radius: 150px;
+    transform: scale(1.0);
+    transition: all ease .5s;
+}
+
+#cardStatus:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.copyright, img{
+    filter: opacity(.7);
+}
+
+footer{
+    border-top: 1px solid rgb(230, 230, 230) !important;
+}
+
+#btnContratista{
+    transform: scale(1.0);
+    transition: all ease .5s;
+}
+
+#btnContratista:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#btnContratista, #btnContratista1{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+#divSubopciones{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+#linkOpciones:hover{
+    background-color: #4e73df;
+    color: white !important;
+}
+
+@media (max-width: 537px) {
+    #tituloPortal{
+        font-size:1.3rem ;
+    }
+}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portal de Proveedores</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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" />
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"
+                    style="justify-content: center; text-align: center;">
+                    <img src="../img/icono_braserv.png" alt="logo_braserv" width="50px" srcset="">
+                </div>
+                <div class="sidebar-brand-text mx-3 mt-1">
+                    <img class="mb-4 mt-4"
+                        src="https://braservcolombia.com/wp-content/uploads/2019/12/BRASERV-Duotonos_%C3%ADcono-1024x397.png"
+                        alt="" width="150px">
+                </div>
+            </a>
+
+            <hr class="sidebar-divider my-0 mt-4">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index_admin.html">
+                    <i class="fa fa-home"></i>
+                    <span>Inicio</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <li class="nav-item">
+                <a class="nav-link" href="solicitudes_admin.html">
+                    <i class="fa-solid fa-sheet-plastic"></i>
+                    <span>Solicitudes</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cotizaciones_admin.html">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <span>Cotizaciones</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="pedidos_compraAdmin.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Orden de compra</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseInform" aria-expanded="true"
+                    aria-controls="collapseInform">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Proveedores</span>
+                </a>
+                <div id="collapseInform" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-red py-2 collapse-inner rounded" id="divSubopciones">
+                        <a class="collapse-item" href="activar_proveedor.html" id="linkOpciones">
+                            Activar Proveedores
+                        </a>
+                        <a class="collapse-item" href="nuevo_proveedor.html" id="linkOpciones">Crear Proveedor</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseInform2" aria-expanded="true"
+                    aria-controls="collapseInform2">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Contratistas</span>
+                </a>
+                <div id="collapseInform2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-red py-2 collapse-inner rounded" id="divSubopciones">
+                        <a class="collapse-item" href="contratistas.html" id="linkOpciones">
+                            Ver Contratistas
+                        </a>
+                        <a class="collapse-item" href="nuevo_contratista.html" id="linkOpciones">Nuevo Contratista</a>
+                    </div>
+                </div>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content" class="mb-5">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <h1 class="h4 mb-3 mt-3 text-gray-800">Portal de Proveedores</h1>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <span class="badge badge-danger badge-counter">1</span>
+                            </a>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notificaciones
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fa-solid fa-user" style="color: white !important;"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Junio 8, 2023</div>
+                                        <span class="font-weight-bold">Se ha registrado un nuevo proveedor en el
+                                            sistema, revisa su activación!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
+                                <img class="img-profile rounded-circle" src="../img/usuario.png">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal1">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Cerrar sesión
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="container-fluid">
+                    <div class="bg-white shadow p-4">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <a href="contratistas.html"><img src="../img/atras.png" alt=""
+                                        width="20px"></a>
+                            </div>
+                            <div class="col-md-10">
+                                <h1 class="h4 mb-4 text-gray-800">Nuevo contratista</h1>
+                            </div>
+                        </div>
+                        <hr class="sidebar-divider">
+                        <form class="mb-4">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="basico-tab" data-toggle="tab" href="#basico"
+                                        role="tab" aria-controls="basico" aria-selected="true">Información básica</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="administrativa-tab" data-toggle="tab" href="#administrativa"
+                                        role="tab" aria-controls="administrativa" aria-selected="false">Información
+                                        Administrativa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="anexo-tab" data-toggle="tab" href="#anexo" role="tab"
+                                        aria-controls="anexo" aria-selected="false">Anexos</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="basico" role="tabpanel"
+                                    aria-labelledby="basico-tab">
+                                    <div class="form-row mt-4">
+                                        <div class="form-group col-md-3">
+                                            <label for="inputTipoDoc">Tipo de documento</label>
+                                            <input type="text" class="form-control" id="inputTipoDoc"
+                                                list="produc-list1">
+                                            <datalist id="produc-list1" class="lista_prod">
+                                                <option value="Cedula de ciudadania"></option>
+                                                <option value="N.I.T"></option>
+                                                <option value="Cédula de extranjeria"></option>
+                                            </datalist>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputTipoPer">Tipo de persona</label>
+                                            <input type="text" class="form-control" id="inputTipoPer"
+                                                list="produc-list2">
+                                            <datalist id="produc-list2" class="lista_prod">
+                                                <option value="Juridica"></option>
+                                                <option value="Fisica"></option>
+                                            </datalist>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputNumeroIden">Número de identificación</label>
+                                            <input type="number" class="form-control" id="inputNumeroIden">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputRazon">Razón social / Nombre completo</label>
+                                            <input type="text" class="form-control" id="inputRazon">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <label for="inputPrimNombre">Primer nombre</label>
+                                            <input type="text" class="form-control" id="inputPrimNombre">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputSegNombre">Segundo nombre</label>
+                                            <input type="text" class="form-control" id="inputSegNombre">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputPriApellido">Primer apellido</label>
+                                            <input type="text" class="form-control" id="inputPriApellido">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputSegApellido">Segundo apellido</label>
+                                            <input type="text" class="form-control" id="inputSegApellido">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="inputPais">Pais</label>
+                                            <input type="text" class="form-control" id="inputPais" list="produc-list3">
+                                            <datalist id="produc-list3" class="lista_prod">
+                                                <option value="Colombia"></option>
+                                                <option value="Extranjero"></option>
+                                            </datalist>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputDep">Departamento</label>
+                                            <input type="text" class="form-control" id="inputDep">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputMunicipio">Municipio</label>
+                                            <input type="text" class="form-control" id="inputMunicipio">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputDireccion">Dirección</label>
+                                            <input type="text" class="form-control" id="inputDireccion">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="administrativa" role="tabpanel"
+                                    aria-labelledby="administrativa-tab">
+                                    <div class="form-row mt-4">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputRepresentante">Representante legal</label>
+                                            <input type="text" class="form-control" id="inputRepresentante">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputNRepresentante">N° Identificación representante</label>
+                                            <input type="number" class="form-control" id="inputNRepresentante">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <label for="inputBanco">Banco</label>
+                                            <input type="text" class="form-control" id="inputBanco">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCuenta">Cuenta corriente</label>
+                                            <input type="number" class="form-control" id="inputCuenta">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="anexo" role="tabpanel" aria-labelledby="anexo-tab">
+                                    <div class="form-row mt-4">
+                                        <div class="form-group col-md-12">
+                                            <label for="formFile" class="form-label">Adjuntar Cámara de comercio</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="formFile" class="form-label">Adjuntar RUT</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="formFile" class="form-label">Adjuntar Cédula representante
+                                                legal</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" onclick="alertaGuardarContr()">Guardar registro</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>2023 &copy;<a href="#" class="p-1"><img
+                                    src="https://logodownload.org/wp-content/uploads/2019/12/totvs-logo.png" alt=""
+                                    width="100px"></a></span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Desea salir del sistema?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Seleccione "Salir" si esta listo para cerrar la sesión.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html" style="color: white !important;">Salir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
+    <script src="../js/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/funcion.js"></script>
+
+</body>
+
+</html>
